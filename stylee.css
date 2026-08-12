@@ -6,7 +6,6 @@
 
 html {
     font-size: 6px;
-    scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -518,7 +517,10 @@ footer li {
 
 }
 
-/* EKLENDİ: Aktif menü öğesinin rengini belirleyen kural */
 #nav-links .nav-link.active-link {
     color: #1ABC9B;
+}
+
+html {
+    scroll-behavior: smooth;
 }

@@ -36,19 +36,16 @@
                         </a>
                     </li>
 
-                   
                     <li class="nav-item text-uppercase">
                         <a href="#portfolio" class="nav-link">
                             Portfolio
                         </a>
                     </li>
-                   
                     <li class="nav-item text-uppercase">
                         <a href="#about" class="nav-link">
                             About
                         </a>
                     </li>
-                   
                     <li class="nav-item text-uppercase">
                         <a href="#contact" class="nav-link">
                             Contact
@@ -61,7 +58,6 @@
     </nav>
     <header>
         <div class="container">
-           
             <img id="profile-image" class="img-fluid" src="profile.png" alt="hata">
             <h1 class="text-uppercase">Kaan Yaraş</h1>
             <h2>...HOŞGELDİNİZ...</h2>
@@ -79,7 +75,6 @@
                 <div class="col">
                     <div class="portfolio-items">
                         <a href="https://github.com/kaanyaras0-afk/ne-pisirsem-" target="_blank">
-                            
                             <img class="img-fluid-p" src="project1.png" alt="hata">
                             <div class="img-overlay">
                                 <div class="icon">
@@ -95,7 +90,6 @@
                 <div class="col">
                     <div class="portfolio-items">
                         <a href="https://github.com/kaanyaras0-afk/Htmll-CSS-deneme-v2" target="_blank">
-                            
                             <img class="img-fluid-p" src="project2.png" alt="hata">
                             <div class="img-overlay">
                                 <div class="icon">
@@ -111,7 +105,6 @@
                 <div class="col">
                     <div class="portfolio-items">
                         <a href="https://github.com/kaanyaras0-afk?tab=repositories" target="_blank">
-                            
                             <img class="img-fluid-p" src="project3.png" alt="hata">
                             <div class="img-overlay">
                                 <div class="icon">
@@ -220,19 +213,19 @@
                         </button>
                     </li>
                     <li>
-                        <button class="btn btn-outline btn-social">
+                        <a href="https://github.com/kaanyaras0-afk" target="_blank" class="btn btn-outline btn-social">
                             <i class="fa-brands fa-github"></i>
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button class="btn btn-outline btn-social">
+                        <a href="https://www.linkedin.com/in/kaan-yara%C5%9F-04043b325/" target="_blank" class="btn btn-outline btn-social">
                             <i class="fa-brands fa-linkedin"></i>
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button class="btn btn-outline btn-social">
+                        <a href="https://www.instagram.com/kaanyras/" target="_blank" class="btn btn-outline btn-social">
                             <i class="fa-brands fa-instagram"></i>
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -269,25 +262,24 @@
 
     </script>
 
-    
     <script>
     $(function () {
-        
+        // Sadece bölüme giden linkleri seçiyoruz (portfolio, about, contact)
         var $navLinks = $(".nav-link[href^='#']").not(".nav-icon .nav-link");
         var $sections = $("section[id]");
 
-       
+        // Tıklandığında hemen o linki aktif yap
         $navLinks.click(function () {
             $navLinks.removeClass("active-link");
             $(this).addClass("active-link");
         });
 
-        
+        // Sayfa kaydırılırken hangi bölümdeysek o linki aktif yap
         $(window).scroll(function () {
             var scrollPos = $(window).scrollTop();
 
             $sections.each(function () {
-                var top = $(this).offset().top - 150; 
+                var top = $(this).offset().top - 150; // navbar yüksekliği için pay
                 var bottom = top + $(this).outerHeight();
                 var id = $(this).attr("id");
 
