@@ -264,22 +264,22 @@
 
     <script>
     $(function () {
-        // Sadece bölüme giden linkleri seçiyoruz (portfolio, about, contact)
+       )
         var $navLinks = $(".nav-link[href^='#']").not(".nav-icon .nav-link");
         var $sections = $("section[id]");
 
-        // Tıklandığında hemen o linki aktif yap
+      
         $navLinks.click(function () {
             $navLinks.removeClass("active-link");
             $(this).addClass("active-link");
         });
 
-        // Sayfa kaydırılırken hangi bölümdeysek o linki aktif yap
+        
         $(window).scroll(function () {
             var scrollPos = $(window).scrollTop();
 
             $sections.each(function () {
-                var top = $(this).offset().top - 150; // navbar yüksekliği için pay
+                var top = $(this).offset().top - 150; 
                 var bottom = top + $(this).outerHeight();
                 var id = $(this).attr("id");
 
