@@ -3,7 +3,7 @@
 Bilgisayar Mühendisliği öğrencisi olarak projelerimi, özgeçmişimi ve iletişim bilgilerimi sergilemek için hazırladığım kişisel portfolyo web sitesi.
 
 ## 🔗 Canlı Demo
-*(GitHub Pages ile yayına aldıktan sonra linki buraya ekle, örn: `https://kaanyaras0-afk.github.io/portfolio/`)*
+👉 [https://kaanyaras0-afk.github.io/MyPortfolio/](https://kaanyaras0-afk.github.io/MyPortfolio/)
 
 ## 📋 Özellikler
 - **Duyarlı (responsive) navigasyon menüsü** — küçük ekranlarda hamburger menüye dönüşen mobil uyumlu tasarım
